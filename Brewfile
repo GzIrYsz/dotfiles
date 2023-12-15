@@ -27,7 +27,6 @@ cask "font-jetbrains-mono-nerd-font"
 
 # Apps
 cask "arc"
-cask "whatsapp"
 cask "discord"
 cask "iterm2"
 cask "obsidian"
@@ -45,3 +44,4 @@ cask "wireshark"
 cask "anki"
 cask "raycast"
 cask "focusrite-control"
+cask "jetbrains-toolbox"
