@@ -9,6 +9,7 @@ brew "neovim"
 brew "tmux"
 brew "fd"
 brew "ripgrep"
+brew "neofetch"
 
 # CLI dev tools
 brew "php"
@@ -16,6 +17,7 @@ brew "composer"
 brew "gradle"
 brew "cmake"
 brew "pyenv"
+brew "poetry"
 
 # CLI security tools
 brew "gnupg"
