@@ -15,6 +15,7 @@ brew "php"
 brew "composer"
 brew "gradle"
 brew "cmake"
+brew "pyenv"
 
 # CLI security tools
 brew "gnupg"
