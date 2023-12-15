@@ -1,0 +1,44 @@
+{
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productName" : "MX Master 3",
+          "productID" : "0xb023",
+          "serialNumber" : "1AC2380F4DD4DF3B",
+          "category" : "mouse"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : false,
+        "acceleration" : 0,
+        "speed" : 0.3
+      },
+      "scrolling" : {
+        "distance" : 5,
+        "acceleration" : 1,
+        "speed" : 0
+      }
+    },
+    {
+      "scrolling" : {
+        "distance" : 3,
+        "acceleration" : 1,
+        "speed" : 0
+      },
+      "if" : {
+        "device" : {
+          "productName" : "USB Receiver",
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "productID" : "0xc52b"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5"
+}
