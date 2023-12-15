@@ -10,6 +10,7 @@ brew "tmux"
 brew "fd"
 brew "ripgrep"
 brew "neofetch"
+brew "lsd"
 
 # CLI dev tools
 brew "php"
