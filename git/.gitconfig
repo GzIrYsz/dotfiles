@@ -1,0 +1,12 @@
+[user]
+	name = Thomas REMY
+	email = contact@thomasremy.fr
+	signingkey = 89507A3110A0EC5E88422F6D691F2B6E7C408E8C
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
