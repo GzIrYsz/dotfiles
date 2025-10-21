@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source $HOME/.config/zsh/antigen.zsh
+source "${ZDOTDIR:-$HOME}/antigen.zsh"
 
 antigen use oh-my-zsh
 
@@ -17,7 +17,7 @@ antigen theme romkatv/powerlevel10k
 
 antigen apply
 
-HISTFILE="$HOME/.zsh_history"
+HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh/.zsh_history"
 HISTSIZE=500000
 SAVEHIST="$HISTSIZE"
 
@@ -26,10 +26,10 @@ setopt autocd
 bindkey -v
 
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/tremy/.zshrc'
+zstyle :compinstall filename "${ZDOTDIR:-$HOME}/.zshrc"
 
 autoload -Uz compinit
-compinit
+compinit -d "${XDG_CACHE_HOME:-$HOME/.cache}/zsh/.zcompdump"
 # End of lines added by compinstall
 
 alias vi=nvim
@@ -40,5 +40,5 @@ alias ll='lsd -lh'
 alias ls='lsd -G'
 alias lsa='lsd -lah'
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
